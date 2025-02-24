@@ -1,0 +1,65 @@
+.gallerySliderContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branchGalleryImages {
+  position: relative;
+  display: flex;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 60%;
+  border: 2px solid #abb7e1;
+}
+
+.branchGalleryImage {
+  object-fit: cover;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.4rem;
+}
+
+.btnLeft,
+.btnRight {
+  width: 4rem;
+  height: 4rem;
+}
+
+.paginationBtns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .paginationControls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .paginationBtns {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 1.6rem;
+  }
+
+  .indicator {
+    bottom: 1.6rem;
+  }
+}

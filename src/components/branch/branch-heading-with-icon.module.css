@@ -1,0 +1,10 @@
+.branchIconHeading {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.branchSectionHeading {
+  font-size: 1.8rem;
+  letter-spacing: -0.036rem;
+}

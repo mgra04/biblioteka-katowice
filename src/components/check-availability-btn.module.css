@@ -1,0 +1,53 @@
+.drawerContent {
+  max-width: 100vw;
+  width: 100%;
+  padding: 2.4rem;
+  margin: 0 auto;
+}
+
+.selectTrigger {
+  width: 100%;
+}
+
+.availableItemList {
+  margin-top: 2.4rem;
+  margin-bottom: 3.2rem;
+  max-height: 39rem;
+}
+
+.availableItemList section {
+  padding: 1.6rem 1.2rem;
+}
+
+.availableItemList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.availableItemList::-webkit-scrollbar-track {
+  background: #f0f3ff;
+  border-radius: 4px;
+}
+
+.availableItemList::-webkit-scrollbar-thumb {
+  background: #a0aec0;
+  border-radius: 4px;
+}
+
+.availableItemList::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+.availableItemList > *:nth-child(odd) {
+  background-color: #e4eaff;
+}
+
+.availableItemList > *:nth-child(even) {
+  background-color: #dae1fb;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .drawerContent {
+    max-width: 60rem;
+    padding: 2.4rem 0;
+  }
+}

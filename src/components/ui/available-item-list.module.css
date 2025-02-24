@@ -1,0 +1,29 @@
+.availableItemList {
+  overflow-y: auto;
+}
+
+.availableItemList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.availableItemList::-webkit-scrollbar-track {
+  background: #f0f3ff;
+  border-radius: 4px;
+}
+
+.availableItemList::-webkit-scrollbar-thumb {
+  background: #a0aec0;
+  border-radius: 4px;
+}
+
+.availableItemList::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
+
+.availableItemList > *:nth-child(odd) {
+  background-color: #e4eaff;
+}
+
+.availableItemList > *:nth-child(even) {
+  background-color: #dae1fb;
+}

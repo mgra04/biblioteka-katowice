@@ -1,0 +1,11 @@
+.triggerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media screen and (max-width: 26.5rem) {
+  .sortIcon {
+    display: none;
+  }
+}

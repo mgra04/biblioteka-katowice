@@ -1,0 +1,72 @@
+.container {
+  max-width: 120rem;
+  margin: 0 2.4rem;
+}
+
+.backBtn {
+  margin: 1.6rem 0 3.2rem 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  position: relative;
+  padding: 8.8rem 1.2rem 2.4rem;
+  border-radius: 1.2rem;
+  background: #eceffc;
+  box-shadow: 0px 271px 76px 0px rgba(33, 35, 45, 0),
+    0px 173px 69px 0px rgba(33, 35, 45, 0),
+    0px 97px 58px 0px rgba(33, 35, 45, 0.01),
+    0px 43px 43px 0px rgba(33, 35, 45, 0.02),
+    0px 11px 24px 0px rgba(33, 35, 45, 0.02);
+}
+
+.logoImage {
+  position: absolute;
+  top: -0.8rem;
+  left: -0.8rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .formContainer {
+    padding: 11rem 3.2rem 2.4rem;
+  }
+
+  .logoImage {
+    position: absolute;
+    top: -1.2rem;
+    left: -1.6rem;
+  }
+}
+
+@media screen and (min-width: 52.5rem) {
+  .backBtn {
+    margin-left: 2.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .formContainer {
+    padding: 2.4rem 3.2rem;
+    flex-direction: row;
+    gap: 0;
+    max-width: 79.6rem;
+    margin: 0 auto;
+  }
+
+  .fullForm {
+    width: 100%;
+    max-width: 35.6rem;
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .backBtn {
+    margin-left: 0;
+  }
+}

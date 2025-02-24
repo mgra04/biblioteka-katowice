@@ -1,0 +1,11 @@
+.heading {
+  color: #21232d;
+  font-weight: 800;
+  letter-spacing: -0.064rem;
+}
+
+.headingSection {
+  display: flex;
+  gap: 1.6rem;
+  align-items: end;
+}

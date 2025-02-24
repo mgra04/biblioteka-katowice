@@ -1,0 +1,17 @@
+.custom-toast {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.custom-toast-container {
+  width: auto;
+  min-width: 30rem;
+}
+
+.custom-toast-body {
+  font-size: 1.6rem;
+}
+
+.custom-toast-progress {
+  background-color: #4caf50;
+}

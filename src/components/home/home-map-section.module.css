@@ -1,0 +1,56 @@
+.sectionHeading {
+  font-size: 3.2rem;
+  letter-spacing: -0.64rem;
+  margin-bottom: 2.4rem;
+  --image-size: 5.6rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .tempMap {
+    height: 43rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .mapSection {
+    margin: 0 2.4rem;
+  }
+
+  .mapWithActions {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  .absoluteRectangle {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: calc(100% - 4.8rem);
+    height: 19.8rem;
+    background: linear-gradient(
+      86deg,
+      rgba(218, 225, 251, 0) 1.61%,
+      #dae1fb 46.86%
+    );
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .mapSection {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  .sectionHeading {
+    font-size: 4rem;
+    letter-spacing: -0.72rem;
+    margin-bottom: 3.2rem;
+    --image-size: 8.4rem;
+    justify-content: start;
+  }
+}

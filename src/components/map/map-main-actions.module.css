@@ -1,0 +1,25 @@
+.mapMainActions {
+  width: 100%;
+  padding: 2.4rem;
+  background-color: #dae1fb;
+}
+
+.infoText {
+  color: #d97706;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: -0.028rem;
+  margin-bottom: 2.4rem;
+}
+
+.select {
+  width: 100%;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .mapMainActions {
+    padding: 0;
+    background-color: transparent;
+  }
+}

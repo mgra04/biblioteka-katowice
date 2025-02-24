@@ -1,0 +1,86 @@
+.card {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  box-shadow: 0px 133px 37px 0px rgba(171, 176, 196, 0),
+    0px 85px 34px 0px rgba(171, 176, 196, 0.01),
+    0px 48px 29px 0px rgba(171, 176, 196, 0.05),
+    0px 21px 21px 0px rgba(171, 176, 196, 0.09),
+    0px 5px 12px 0px rgba(171, 176, 196, 0.1);
+  border-radius: 1.6rem;
+  border: double 2px transparent;
+  background-image: linear-gradient(169deg, #f0f3ff 5.01%, #e4eaff 95.66%),
+    linear-gradient(0deg, rgba(37, 99, 235, 0.5) 0%, rgba(37, 99, 235, 0) 60%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 61.956%;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.cardContent {
+  position: relative;
+  padding: 1.2rem 1.6rem 1.6rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.cardStreetName {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.cardOpeningHoursTitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.cardOpeningHoursList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.cardOpeningHoursText {
+  font-size: 1.4rem;
+}
+
+.cardTag {
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.024rem;
+}
+
+.cardFooter {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.cardAboluteBtns {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.6rem;
+}
+
+.mainBtns {
+  letter-spacing: -0.024rem;
+}
+
+@media screen and (min-width: 25.2rem) {
+  .mainBtns {
+    flex: 1;
+  }
+}

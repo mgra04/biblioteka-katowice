@@ -1,0 +1,30 @@
+.catalogItemsSection {
+  margin-left: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.sectionHeading {
+  font-size: 2.4rem;
+  letter-spacing: -0.036rem;
+  margin-bottom: 2.4rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .catalogItemsSection {
+    margin-bottom: 9.6rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .catalogItemsSection {
+    max-width: 120rem;
+    margin: 0 auto 9.6rem;
+  }
+
+  .sectionHeading {
+    font-size: 3.2rem;
+    letter-spacing: -0.048rem;
+    justify-content: start;
+  }
+}

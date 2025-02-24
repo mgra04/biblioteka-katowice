@@ -1,0 +1,68 @@
+.branchInfoContainer {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.branchInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.howToGetThereBtn {
+  width: 100%;
+}
+
+.divider1 {
+  width: 100%;
+  height: 1px;
+  background-color: #b0b8d6;
+  margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .branchInfoContainer {
+    grid-column: 6 / -1;
+    grid-row: 1;
+    margin-left: 1.6rem;
+    margin-bottom: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .branchInfoList {
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .divider1 {
+    display: none;
+  }
+
+  .divider1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -2.4rem;
+    width: 1px;
+    height: 37rem;
+    background-color: #b0b8d6;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .branchInfoContainer {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    margin-left: 0;
+    margin-bottom: 2.4rem;
+    margin-right: 2.4rem;
+  }
+
+  .divider1 {
+    height: 38.9rem;
+  }
+}

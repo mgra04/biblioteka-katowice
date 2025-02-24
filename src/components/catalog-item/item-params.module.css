@@ -1,0 +1,38 @@
+.itemParams {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.itemSectionHeading {
+  font-size: 2.4rem;
+  color: #21232d;
+  letter-spacing: -0.048rem;
+  font-weight: 700;
+}
+
+.itemParamsList {
+  margin-bottom: 4.8rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .itemParams {
+    max-width: calc(100% - 26.4rem);
+  }
+
+  .itemSectionHeading {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .itemParams {
+    max-width: calc(100% - 30.4rem);
+  }
+
+  .itemParamsList {
+    margin-bottom: 6.4rem;
+  }
+}

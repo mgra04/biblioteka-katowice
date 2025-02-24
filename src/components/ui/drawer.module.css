@@ -1,0 +1,59 @@
+.drawerContent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  margin-top: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border-radius: 1.2rem 1.2rem 0 0;
+  border: 0.1rem solid #dae1fb;
+  background-color: #eaeffe;
+}
+
+.drawerTopRectangle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.8rem;
+  height: 0.8rem;
+  width: 100px;
+  border-radius: 9999px;
+  background-color: rgba(33, 35, 45, 0.15);
+}
+
+.drawerHeader {
+  display: grid;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.drawerFooter {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.drawerTitle {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.025rem;
+  color: #21232d;
+}
+
+.drawerDescription {
+  margin-bottom: 2.4rem;
+  color: #50556d;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@media (min-width: 640px) {
+  .drawerHeader {
+    text-align: left;
+  }
+}

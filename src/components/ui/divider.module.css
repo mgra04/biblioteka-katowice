@@ -1,0 +1,12 @@
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #b0b8d6;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 42rem) {
+  .divider {
+    margin-bottom: 2.4rem;
+  }
+}

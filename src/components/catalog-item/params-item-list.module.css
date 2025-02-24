@@ -1,0 +1,21 @@
+.paramsItemListShort {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.paramsItemListLong {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.paramsItemListLong li:nth-child(odd) {
+  background-color: #e4eaff;
+}
+
+.paramsItemListLong li:nth-child(even) {
+  background-color: #dae1fb;
+}

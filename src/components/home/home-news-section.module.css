@@ -1,0 +1,33 @@
+.newsSection {
+  margin-left: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.sectionHeading {
+  font-size: 3.2rem;
+  letter-spacing: -0.64rem;
+  margin-bottom: 2.4rem;
+  --image-size: 5.6rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .eventsSection {
+    margin-bottom: 9.6rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .newsSection {
+    max-width: 120rem;
+    margin: 0 auto 9.6rem;
+  }
+
+  .sectionHeading {
+    font-size: 4rem;
+    letter-spacing: -0.72rem;
+    margin-bottom: 3.2rem;
+    --image-size: 8.4rem;
+    justify-content: start;
+  }
+}

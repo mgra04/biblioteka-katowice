@@ -1,0 +1,105 @@
+.defaultClasses {
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  outline: none;
+  letter-spacing: 0.064rem;
+}
+
+.primary {
+  background: #21232d;
+  color: #e5eafc;
+  box-shadow: 0px 21px 6px 0px rgba(33, 35, 45, 0),
+    0px 13px 5px 0px rgba(33, 35, 45, 0.02),
+    0px 8px 5px 0px rgba(33, 35, 45, 0.06),
+    0px 3px 3px 0px rgba(33, 35, 45, 0.1),
+    0px 1px 2px 0px rgba(33, 35, 45, 0.12);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.primary:hover {
+  background: rgba(33, 35, 45, 0.9);
+  color: #fff;
+  box-shadow: none;
+}
+
+.destructive {
+  background: rgba(185, 28, 28, 1);
+  color: #e5eafc;
+  box-shadow: 0px 7px 2px 0px rgba(54, 12, 12, 0),
+    0px 4px 2px 0px rgba(54, 12, 12, 0.02),
+    0px 2px 1px 0px rgba(54, 12, 12, 0.06),
+    0px 1px 1px 0px rgba(54, 12, 12, 0.1),
+    0px 0px 1px 0px rgba(54, 12, 12, 0.12);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.destructive:hover {
+  background: rgba(185, 28, 28, 0.9);
+  color: #fff;
+  box-shadow: none;
+}
+
+.outline {
+  font-weight: 600;
+  color: #50556d;
+  fill: #50556d;
+  background: #edf1ff;
+  box-shadow: inset 0 0 0 0.15rem #50556d, 0px 13px 4px 0px rgba(33, 35, 45, 0),
+    0px 9px 3px 0px rgba(33, 35, 45, 0.01),
+    0px 5px 3px 0px rgba(33, 35, 45, 0.03),
+    0px 2px 2px 0px rgba(33, 35, 45, 0.04),
+    0px 1px 1px 0px rgba(33, 35, 45, 0.05);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.outline:hover {
+  box-shadow: inset 0 0 0 0.15rem #21232d;
+  color: #21232d;
+  fill: #21232d;
+  background: #edf1ff;
+}
+
+.md {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.6rem;
+}
+
+.lg {
+  padding: 1.5rem 2.4rem;
+  border-radius: 0.8rem;
+}
+
+.icon {
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.paginationButton {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+}
+
+.paginationArrow {
+  max-width: 5.2rem;
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 26rem) {
+  .paginationButton {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .paginationArrow {
+    height: 3.6rem;
+  }
+}

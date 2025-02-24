@@ -1,0 +1,24 @@
+.paginationContainer {
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.moveIcon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 26rem) {
+  .paginationContainer {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 26.75rem) {
+  .paginationContainer {
+    justify-content: flex-end;
+    gap: 1.2rem;
+  }
+}

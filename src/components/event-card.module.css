@@ -1,0 +1,36 @@
+.eventTagList {
+  margin-bottom: 1.6rem;
+}
+
+.eventParagraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.cardDetailsList {
+  margin-bottom: 2.4rem;
+}
+
+.cardDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eventCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 75rem) {
+  .eventCardFooter {
+    width: 100%;
+    margin-top: auto;
+  }
+}

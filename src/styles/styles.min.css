@@ -1,0 +1,71 @@
+.marker-cluster-small {
+  background-color: rgba(37, 100, 235, 0.6);
+}
+.marker-cluster-small div {
+  background-color: rgb(37, 99, 235);
+}
+.marker-cluster-medium {
+  background-color: rgba(25, 70, 167, 0.6);
+}
+.marker-cluster-medium div {
+  background-color: rgb(25, 70, 167);
+}
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+  background-color: rgba(241, 128, 23, 0.6);
+}
+.leaflet-oldie .marker-cluster-small {
+  background-color: rgba(37, 100, 235, 0.6);
+}
+.leaflet-oldie .marker-cluster-small div {
+  background-color: rgb(37, 99, 235);
+}
+.leaflet-oldie .marker-cluster-medium {
+  background-color: rgba(25, 70, 167, 0.6);
+}
+.leaflet-oldie .marker-cluster-medium div {
+  background-color: rgb(25, 70, 167);
+}
+.leaflet-oldie .marker-cluster-large {
+  background-color: rgb(253, 156, 115);
+}
+.leaflet-oldie .marker-cluster-large div {
+  background-color: rgb(241, 128, 23);
+}
+.marker-cluster {
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 1.4rem;
+  color: #e8edff;
+  font-weight: 600;
+}
+.marker-cluster span {
+  line-height: 30px;
+}
+.leaflet-cluster-anim .leaflet-marker-icon,
+.leaflet-cluster-anim .leaflet-marker-shadow {
+  -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+.leaflet-cluster-spider-leg {
+  -webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out,
+    -webkit-stroke-opacity 0.3s ease-in;
+  -moz-transition: -moz-stroke-dashoffset 0.3s ease-out,
+    -moz-stroke-opacity 0.3s ease-in;
+  -o-transition: -o-stroke-dashoffset 0.3s ease-out,
+    -o-stroke-opacity 0.3s ease-in;
+  transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
+}

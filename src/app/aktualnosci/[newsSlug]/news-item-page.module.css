@@ -1,0 +1,153 @@
+.container {
+  max-width: 120rem;
+  margin: 0 2.4rem;
+}
+
+.backBtn {
+  margin: 1.6rem 0 3.2rem 0;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 6.4rem;
+}
+
+.itemImageContainer {
+  position: relative;
+  padding-top: 95%;
+  width: calc(100% - 12rem);
+  max-width: 40rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 3.2rem;
+  box-shadow: 0px 198px 55px 0px rgba(33, 35, 45, 0),
+    0px 127px 51px 0px rgba(33, 35, 45, 0),
+    0px 71px 43px 0px rgba(33, 35, 45, 0.02),
+    0px 32px 32px 0px rgba(33, 35, 45, 0.03),
+    0px 8px 17px 0px rgba(33, 35, 45, 0.03);
+}
+
+.itemImage {
+  object-fit: cover;
+}
+
+.brushImageWrapper {
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: -3.5rem;
+  right: 0;
+  width: 22.8rem;
+  height: 38.6rem;
+}
+
+.brushImage {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .brushImageWrapper {
+    display: none;
+  }
+}
+
+.itemBtnsGroup {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.heading {
+  font-size: 3.2rem;
+  letter-spacing: -0.048rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: -0.032rem;
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.itemSections {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.descriptionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  letter-spacing: -0.036rem;
+}
+
+.subList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.listParagraph {
+  font-size: 1.4rem;
+  letter-spacing: -0.028rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .itemImageContainer {
+    padding-top: 0;
+    height: 33.9rem;
+    width: 24rem;
+    max-width: 40rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    box-shadow: 0px 198px 55px 0px rgba(33, 35, 45, 0),
+      0px 127px 51px 0px rgba(33, 35, 45, 0),
+      0px 71px 43px 0px rgba(33, 35, 45, 0.02),
+      0px 32px 32px 0px rgba(33, 35, 45, 0.03),
+      0px 8px 17px 0px rgba(33, 35, 45, 0.03);
+  }
+
+  .heading {
+    max-width: calc(100% - 12rem);
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .backBtn {
+    margin-left: 0;
+  }
+
+  .item {
+    margin: 0 auto 6.4rem;
+    grid-template-columns: 28rem 1fr;
+  }
+
+  .itemImageContainer {
+    height: 39.6rem;
+    width: 28rem;
+    box-shadow: 0px 198px 55px 0px rgba(33, 35, 45, 0),
+      0px 127px 51px 0px rgba(33, 35, 45, 0),
+      0px 71px 43px 0px rgba(33, 35, 45, 0.02),
+      0px 32px 32px 0px rgba(33, 35, 45, 0.03),
+      0px 8px 17px 0px rgba(33, 35, 45, 0.03);
+  }
+}

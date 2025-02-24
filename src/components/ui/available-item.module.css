@@ -1,0 +1,53 @@
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.bold {
+  font-weight: 600;
+  color: #21232d;
+}
+
+.clrGreen {
+  color: #15803d;
+}
+
+.clrRed {
+  color: #b91c1c;
+}
+
+.streetText {
+  display: none;
+}
+
+.location {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.availableItemContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.availableItemContainer div {
+  flex: 1;
+}
+
+.availableItemTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+@media screen and (min-width: 37.5rem) {
+  .streetText {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .availableItemTextContainer {
+    gap: 0.4rem;
+  }
+}

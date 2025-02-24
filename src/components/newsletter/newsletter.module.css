@@ -1,0 +1,194 @@
+.newsletterSection {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-top: 6.4rem;
+  padding: 4.8rem 2.4rem 28rem;
+  background-color: #dae1fb;
+}
+
+.newsletterHeading {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  --image-size: 42px;
+  margin-bottom: 3.2rem;
+}
+
+.newsletterPaperAircraft {
+  position: absolute;
+  bottom: -2.7rem;
+  left: 0;
+}
+
+.newsletterSpiral1 {
+  position: absolute;
+  left: 3.6rem;
+  bottom: 13.6rem;
+}
+
+.newsletterSpiral2 {
+  position: absolute;
+  left: 15.2rem;
+  bottom: 16.3rem;
+}
+
+.newsletterSpiral3 {
+  position: absolute;
+  left: 26.8rem;
+  bottom: 6rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .newsletterSection {
+    padding: 4.8rem 2.4rem;
+  }
+
+  .newsletterPaperAircraft {
+    width: 380px;
+    height: 279.295px;
+    transform: rotate(-2.587deg);
+    left: auto;
+    right: 1rem;
+    bottom: -2.4rem;
+  }
+
+  .newsletterSpiral1 {
+    width: 104px;
+    height: 90px;
+    transform: rotate(-2deg);
+    left: auto;
+    right: 23rem;
+    bottom: 19.4rem;
+  }
+
+  .newsletterSpiral2 {
+    width: 104px;
+    height: 90px;
+    transform: rotate(-5deg);
+    left: auto;
+    right: 9rem;
+    bottom: 26rem;
+  }
+
+  .newsletterSpiral3 {
+    width: 104px;
+    height: 90px;
+    position: absolute;
+    left: auto;
+    right: 3.6rem;
+    bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .newsletterPaperAircraft {
+    right: 5.8rem;
+  }
+
+  .newsletterSpiral1 {
+    right: 27.8rem;
+  }
+
+  .newsletterSpiral2 {
+    right: 13.8rem;
+  }
+
+  .newsletterSpiral3 {
+    right: 8.4rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .newsletterSection {
+    padding: 4.8rem 2.4rem 18.6rem;
+  }
+
+  .newsletterContent {
+    width: 120rem;
+    margin: 0 auto;
+  }
+
+  .newsletterHeading {
+    font-size: 4.8rem;
+    line-height: 6.6rem;
+    --image-size: 84px;
+  }
+
+  .newsletterPaperAircraft {
+    width: 680px;
+    height: 508px;
+    transform: rotate(0deg);
+    left: auto;
+    right: 2.4rem;
+    bottom: -8rem;
+  }
+
+  .newsletterSpiral1 {
+    width: 166.192px;
+    height: 140px;
+    transform: rotate(-30deg);
+    left: auto;
+    right: 42rem;
+    bottom: 30rem;
+  }
+
+  .newsletterSpiral2 {
+    width: 166.192px;
+    height: 140px;
+    transform: rotate(15deg);
+    left: auto;
+    right: 16rem;
+    bottom: 38rem;
+  }
+
+  .newsletterSpiral3 {
+    width: 166.192px;
+    height: 140px;
+    transform: rotate(8deg);
+    left: auto;
+    right: 6.4rem;
+    bottom: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .newsletterContent {
+    position: relative;
+  }
+
+  .newsletterPaperAircraft {
+    width: 754px;
+    height: 564px;
+    transform: rotate(0deg);
+    left: auto;
+    right: 3rem;
+    bottom: -26.4rem;
+  }
+
+  .newsletterSpiral1 {
+    width: 180px;
+    height: 155px;
+    transform: rotate(-10deg);
+    left: auto;
+    right: 30rem;
+    bottom: 12rem;
+  }
+
+  .newsletterSpiral2 {
+    width: 180px;
+    height: 155px;
+    transform: rotate(160deg);
+    left: auto;
+    right: -8rem;
+    bottom: 4rem;
+  }
+
+  .newsletterSpiral3 {
+    width: 180px;
+    height: 155px;
+    transform: rotate(20deg);
+    left: auto;
+    right: 12rem;
+    bottom: -14.4rem;
+  }
+}

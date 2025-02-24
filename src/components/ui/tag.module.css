@@ -1,0 +1,40 @@
+.default {
+  background-color: #abbdfb;
+  color: #21232d;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.024rem;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.important {
+  background: #f87171;
+  color: #21232d;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.024rem;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.4rem;
+}
+
+.lg {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.extraLg {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.6rem;
+}

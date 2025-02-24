@@ -1,0 +1,50 @@
+.eventsLayout {
+  margin: 0 auto;
+  max-width: 120rem;
+  min-height: 100vh;
+}
+
+.btnGroup {
+  width: 100%;
+  flex-direction: column;
+}
+
+.btnGroup button {
+  width: 100%;
+}
+
+@media screen and (min-width: 29.5rem) {
+  .btnGroup {
+    width: fit-content;
+    flex-direction: row;
+  }
+
+  .btnGroup button {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 75rem) {
+  .eventsLayout {
+    margin: 0 2.4rem;
+  }
+}
+
+.topPagination {
+  display: none;
+}
+
+.bottomPagination {
+  display: flex;
+}
+
+.heading {
+  font-size: 3.2rem;
+}
+
+@media screen and (min-width: 42rem) {
+  .topPagination {
+    width: 43.6rem;
+    display: flex;
+  }
+}

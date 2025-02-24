@@ -1,0 +1,118 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.4rem;
+}
+
+.input {
+  dispaly: flex;
+  align-items: center;
+  width: 100%;
+  height: 4.2rem;
+  padding: 0 1.2rem;
+  border-radius: 0.6rem;
+  background: #dfe5fb;
+  border: none;
+  font-size: 1.6rem;
+  color: #50556d;
+  line-height: 1.8rem;
+  letter-spacing: -0.032rem;
+  font-weight: 500;
+  box-shadow: inset 0 0 0 1px rgba(80, 85, 109, 0.5),
+    7px 14px 4px 0px rgba(166, 170, 186, 0),
+    4px 9px 4px 0px rgba(166, 170, 186, 0.02),
+    2px 5px 3px 0px rgba(166, 170, 186, 0.08),
+    1px 2px 3px 0px rgba(166, 170, 186, 0.13),
+    0px 1px 1px 0px rgba(166, 170, 186, 0.15);
+}
+
+.input::placeholder {
+  color: rgba(33, 35, 45, 0.5);
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: -0.032rem;
+}
+
+.input:hover,
+.input:active,
+.input:focus,
+.input::placeholder:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #21232d;
+  color: rgba(33, 35, 45, 1);
+}
+
+.inputLabel {
+  font-size: 1.4rem;
+  color: #21232d;
+  font-weight: 600;
+  letter-spacing: -0.028rem;
+}
+
+.checkboxGroup {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.checkbox {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0 0 1px rgba(80, 85, 109, 0.5);
+  background: #dfe5fb;
+  cursor: pointer;
+}
+
+.checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgb(80, 85, 109);
+  border-radius: 0.1rem;
+  transform: translate(-50%, -50%);
+}
+
+.checkboxLabel {
+  color: #50556d;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -0.028rem;
+}
+
+.checkboxLabel a {
+  color: #21232d;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.inputGroup p,
+.checkboxGroup p {
+  font-size: 1.4rem;
+  color: #b91c1c;
+  font-weight: 500;
+  letter-spacing: -0.028rem;
+}
+
+.formBtn {
+  margin-top: 1.6rem;
+  width: 100%;
+}

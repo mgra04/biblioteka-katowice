@@ -1,0 +1,16 @@
+.branchUpcomingEventsContainer {
+  margin-left: 2.4rem;
+}
+
+.branchSecHeading {
+  font-size: 2.4rem;
+  letter-spacing: -0.048rem;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 75rem) {
+  .branchUpcomingEventsContainer {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,30 @@
+.branchSecHeading {
+  font-size: 2.4rem;
+  letter-spacing: -0.048rem;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .branchGalleryContainer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .branchSecHeading {
+    font-size: 3.2rem;
+    letter-spacing: -0.064rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .branchGalleryContainer {
+    grid-column: 5 / -1;
+    grid-row: 1;
+    margin-left: 1.2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

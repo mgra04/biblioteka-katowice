@@ -1,0 +1,14 @@
+.paginationBtns {
+  gap: 0.6rem;
+}
+
+.dotsIcon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 26.75rem) {
+  .paginationBtns {
+    gap: 0.8rem;
+  }
+}

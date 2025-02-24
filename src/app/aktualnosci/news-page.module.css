@@ -1,0 +1,30 @@
+.newsLayout {
+  margin: 0 auto;
+  max-width: 120rem;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 75rem) {
+  .newsLayout {
+    margin: 0 2.4rem;
+  }
+}
+
+.topPagination {
+  display: none;
+}
+
+.bottomPagination {
+  display: flex;
+}
+
+.heading {
+  font-size: 3.2rem;
+}
+
+@media screen and (min-width: 42rem) {
+  .topPagination {
+    width: 43.6rem;
+    display: flex;
+  }
+}

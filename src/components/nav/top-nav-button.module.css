@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #e1e7fe;
+  background: #21232d;
+  aspect-ratio: 1 / 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #3b4153;
+}
+
+.button:active {
+  background: #3b4153;
+}
+
+.icon {
+  color: #e1e7fe;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 57rem) {
+  .menuButton {
+    display: flex;
+  }
+
+  .accountButton {
+    display: none;
+  }
+}

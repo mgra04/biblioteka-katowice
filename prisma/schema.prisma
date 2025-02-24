@@ -1,0 +1,309 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model Branch {
+  id                          String              @id @default(cuid())
+  branchSlug                  String              @unique
+  branchImageUrl              String
+  branchImageAlt              String
+  branchNumber                String
+  branchName                  String
+  branchDirector              String
+  branchPhone                 String
+  branchEmail                 String
+  branchAddressArea           String
+  branchAddressCode           String
+  branchAddressStreet         String
+  branchOpeningHours          OpeningHours[]
+  branchFacebookLink          String?
+  branchInstagramLink         String?
+  branchWebsiteLink           String?
+  branchGoogleMapLink         String
+  branchAdaptedToDisabilities Boolean
+  branchGallery               Gallery[]
+  branchEvents                Event[]
+  branchOffer                 Offer[]
+  catalogItems                BranchCatalogItem[]
+  branchLatitude              Float
+  branchLongitude             Float
+  createdAt                   DateTime            @default(now())
+  updatedAt                   DateTime            @updatedAt
+}
+
+model News {
+  id                  String              @id @default(cuid())
+  newsSlug            String              @unique
+  newsTitle           String
+  newsDescription     NewsDescription[]
+  newsDate            DateTime
+  newsMobileImageUrl  String
+  newsDesktopImageUrl String
+  newsImageAlt        String
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime            @updatedAt
+  authorId            String?
+  author              Author?             @relation(fields: [authorId], references: [id])
+  UserFavouriteNews   UserFavouriteNews[]
+}
+
+model NewsDescription {
+  id        String            @id @default(cuid())
+  title     String?
+  text      String?
+  linkText  String?
+  linkUrl   String?
+  imageUrl  String?
+  subItems  NewsDescription[] @relation("SubItems")
+  parentId  String?
+  newsId    String
+  news      News              @relation(fields: [newsId], references: [id])
+  parent    NewsDescription?  @relation("SubItems", fields: [parentId], references: [id])
+  createdAt DateTime          @default(now())
+  updatedAt DateTime          @updatedAt
+}
+
+model CatalogItem {
+  id                       String                     @id @default(cuid())
+  catalogItemSlug          String                     @unique
+  catalogItemType          String
+  catalogItemTitle         String
+  catalogItemImageUrl      String
+  catalogItemImageAlt      String
+  catalogItemDescription   String
+  catalogItemParams        Params[]
+  CatalogItemAuthor        CatalogItemAuthor[]
+  catalogItemGenre         String?
+  catalogItemPublishDate   DateTime?
+  catalogItemWidth         String
+  catalogItemHeight        String
+  CatalogItemPublisher     CatalogItemPublisher[]
+  branches                 BranchCatalogItem[]
+  createdAt                DateTime                   @default(now())
+  updatedAt                DateTime                   @updatedAt
+  UserFavouriteCatalogItem UserFavouriteCatalogItem[]
+}
+
+model Params {
+  id                    String        @id @default(cuid())
+  catalogItemParamType  String
+  catalogItemParamName  String
+  catalogItemParamValue ParamsValue[]
+  catalogItemId         String
+  catalogItem           CatalogItem   @relation(fields: [catalogItemId], references: [id])
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+}
+
+model ParamsValue {
+  id                    String  @id @default(cuid())
+  catalogItemParamValue String
+  catalogItemParamLink  String?
+  paramsId              String
+  params                Params  @relation(fields: [paramsId], references: [id])
+}
+
+model BranchCatalogItem {
+  id                  String      @id @default(cuid())
+  branchId            String
+  catalogItemId       String
+  catalogItemQuantity Int
+  branch              Branch      @relation(fields: [branchId], references: [id])
+  catalogItem         CatalogItem @relation(fields: [catalogItemId], references: [id])
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+
+  @@unique([branchId, catalogItemId])
+}
+
+model CatalogItemPublisher {
+  catalogItemId String
+  publisherId   String
+  catalogItem   CatalogItem @relation(fields: [catalogItemId], references: [id])
+  publisher     Publisher   @relation(fields: [publisherId], references: [id])
+
+  @@id([catalogItemId, publisherId])
+}
+
+model Publisher {
+  id            String                 @id @default(cuid())
+  publisherName String
+  publisherLink String?
+  publisherText String?
+  catalogItems  CatalogItemPublisher[]
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+}
+
+model CatalogItemAuthor {
+  catalogItemId String
+  authorId      String
+  catalogItem   CatalogItem @relation(fields: [catalogItemId], references: [id])
+  author        Author      @relation(fields: [authorId], references: [id])
+
+  @@id([catalogItemId, authorId])
+}
+
+model Author {
+  id              String                  @id @default(cuid())
+  authorName      String
+  authorAbout     String
+  authorAboutLong AuthorLongDescription[]
+  catalogItems    CatalogItemAuthor[]
+  createdAt       DateTime                @default(now())
+  updatedAt       DateTime                @updatedAt
+  News            News[]
+}
+
+model AuthorLongDescription {
+  id        String   @id @default(cuid())
+  text      String
+  authorId  String
+  author    Author   @relation(fields: [authorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model OpeningHours {
+  id        String   @id @default(cuid())
+  day       String
+  isOpen    Boolean
+  openTime  String?
+  closeTime String?
+  branchId  String
+  branch    Branch   @relation(fields: [branchId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Gallery {
+  id        String   @id @default(cuid())
+  imageUrl  String
+  imageAlt  String
+  branchId  String
+  branch    Branch   @relation(fields: [branchId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Event {
+  id                   String               @id @default(cuid())
+  eventSlug            String               @unique
+  eventType            String
+  eventTargetGroup     String
+  eventTags            Tag[]
+  eventTitle           String
+  eventDescription     String
+  eventDate            EventDate?
+  eventMobileImageUrl  String
+  eventDesktopImageUrl String
+  eventImageAlt        String
+  eventStartDate       DateTime
+  eventEndDate         DateTime?
+  eventStartHour       String?
+  branchId             String
+  branch               Branch               @relation(fields: [branchId], references: [id])
+  createdAt            DateTime             @default(now())
+  updatedAt            DateTime             @updatedAt
+  UserFavouriteEvent   UserFavouriteEvent[]
+}
+
+model EventDate {
+  id             String    @id @default(cuid())
+  eventStartDate DateTime
+  eventEndDate   DateTime?
+  eventStartHour String?
+  eventId        String    @unique
+  event          Event     @relation(fields: [eventId], references: [id])
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Tag {
+  id             String   @id @default(cuid())
+  tagVariant     String
+  tagDescription String
+  eventId        String
+  event          Event    @relation(fields: [eventId], references: [id])
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Offer {
+  id        String      @id @default(cuid())
+  items     OfferItem[]
+  branchId  String
+  branch    Branch      @relation(fields: [branchId], references: [id])
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model OfferItem {
+  id        String      @id @default(cuid())
+  text      String?
+  linkText  String?
+  linkUrl   String?
+  parentId  String?
+  offerId   String
+  offer     Offer       @relation(fields: [offerId], references: [id])
+  subItems  OfferItem[] @relation("SubItems")
+  parent    OfferItem?  @relation("SubItems", fields: [parentId], references: [id])
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model User {
+  id                    String                     @id @default(cuid())
+  name                  String?
+  avatarUrl             String?
+  email                 String                     @unique
+  hashedPassword        String
+  role                  UserRole
+  favouriteEvents       UserFavouriteEvent[]
+  favouriteCatalogItems UserFavouriteCatalogItem[]
+  favouriteNews         UserFavouriteNews[]
+  createdAt             DateTime                   @default(now())
+  updatedAt             DateTime                   @updatedAt
+}
+
+model UserFavouriteEvent {
+  id      String @id @default(cuid())
+  userId  String
+  eventId String
+  user    User   @relation(fields: [userId], references: [id])
+  event   Event  @relation(fields: [eventId], references: [id])
+
+  @@unique([userId, eventId])
+}
+
+model UserFavouriteCatalogItem {
+  id            String      @id @default(cuid())
+  userId        String
+  catalogItemId String
+  user          User        @relation(fields: [userId], references: [id])
+  catalogItem   CatalogItem @relation(fields: [catalogItemId], references: [id])
+
+  @@unique([userId, catalogItemId])
+}
+
+model UserFavouriteNews {
+  id     String @id @default(cuid())
+  userId String
+  newsId String
+  user   User   @relation(fields: [userId], references: [id])
+  news   News   @relation(fields: [newsId], references: [id])
+
+  @@unique([userId, newsId])
+}
+
+enum UserRole {
+  ADMIN
+  BRANCH_ADMIN
+  USER
+}

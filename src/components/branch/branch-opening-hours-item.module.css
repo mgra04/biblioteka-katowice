@@ -1,0 +1,18 @@
+.branchOpeningHoursItem {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  letter-spacing: -0.032rem;
+}
+
+.clrRed {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.clrDark {
+  color: #21232d;
+  font-weight: 600;
+}

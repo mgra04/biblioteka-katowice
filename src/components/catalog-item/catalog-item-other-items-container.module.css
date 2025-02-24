@@ -1,0 +1,26 @@
+.itemOtherAuthorItems {
+  width: 100%;
+}
+
+.itemSectionHeading {
+  font-size: 2.4rem;
+  letter-spacing: -0.048rem;
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .itemOtherAuthorItems {
+    max-width: calc(100% - 26.8rem);
+  }
+
+  .itemSectionHeading {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .itemOtherAuthorItems {
+    max-width: 89.6rem;
+  }
+}

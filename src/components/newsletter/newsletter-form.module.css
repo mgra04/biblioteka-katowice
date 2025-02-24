@@ -1,0 +1,102 @@
+.newsletterForm {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 1.5rem 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(156deg, #ecf0ff 6.98%, #e5ebff 89.91%);
+  box-shadow: inset 0 0 0 1px #50556d, 7px 14px 4px 0px rgba(166, 170, 186, 0),
+    4px 9px 4px 0px rgba(166, 170, 186, 0.02),
+    2px 5px 3px 0px rgba(166, 170, 186, 0.08),
+    1px 2px 3px 0px rgba(166, 170, 186, 0.13),
+    0px 1px 1px 0px rgba(166, 170, 186, 0.15);
+}
+
+.input::placeholder {
+  color: rgba(33, 35, 45, 0.5);
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: -0.032rem;
+}
+
+.input:hover,
+.input:active,
+.input:focus,
+.input::placeholder:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #21232d;
+  color: rgba(33, 35, 45, 1);
+}
+
+.formGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  color: #50556d;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.032rem;
+}
+
+.checkbox {
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-top: 0.4rem;
+  position: relative;
+  box-sizing: border-box;
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.2rem;
+  box-shadow: inset 0 0 0 1px #50556d;
+  background: linear-gradient(156deg, #ecf0ff 6.98%, #e5ebff 89.91%);
+  cursor: pointer;
+}
+
+.checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: #50556d;
+  border-radius: 0.1rem;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  width: 100%;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .newsletterForm {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 48rem;
+  }
+
+  .button {
+    width: fit-content;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,65 @@
+.form {
+  position: relative;
+  max-width: 100vw;
+}
+
+.queryInput {
+  min-width: 30rem;
+  width: 100%;
+  height: 4.8rem;
+  padding: 1.2rem;
+  background: #edf1ff;
+  color: #21232d;
+  font-size: 16px;
+  border: 0.1rem solid rgba(80, 85, 109, 0.5);
+  border-radius: 0.6rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0px 13px 4px 0px rgba(33, 35, 45, 0),
+    0px 9px 3px 0px rgba(33, 35, 45, 0.01),
+    0px 5px 3px 0px rgba(33, 35, 45, 0.03),
+    0px 2px 2px 0px rgba(33, 35, 45, 0.04),
+    0px 1px 1px 0px rgba(33, 35, 45, 0.05);
+}
+
+.queryInput:focus {
+  outline: none;
+  border: 0.1rem solid #505569;
+}
+
+.queryInput:placeholder {
+  color: rgba(33, 35, 45, 0.5);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+
+.triggerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media screen and (min-width: 42.5rem) {
+  .btns {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+  }
+
+  .queryInput {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 57.5rem) {
+  .form {
+    max-width: 64rem;
+  }
+}

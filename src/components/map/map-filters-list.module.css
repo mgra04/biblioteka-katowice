@@ -1,0 +1,11 @@
+.filtersList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.filtersList button {
+  width: 100%;
+}

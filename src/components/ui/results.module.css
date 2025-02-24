@@ -1,0 +1,12 @@
+.resultsParagraph {
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.resultsBold {
+  font-weight: 600;
+  color: #21232d;
+  line-height: 1.6;
+}

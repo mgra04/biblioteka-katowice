@@ -1,0 +1,56 @@
+.paramsItemShort {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.paramsItemLong {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  column-gap: 1.6rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.paramsItemLabel {
+  font-size: 1.4rem;
+  letter-spacing: -0.028rem;
+}
+
+.paramsItemLink {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #21232d;
+  text-decoration: underline;
+  letter-spacing: -0.028rem;
+}
+
+.paramsItemContent {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #21232d;
+  letter-spacing: -0.028rem;
+}
+
+@media screen and (min-width: 46.5rem) {
+  .paramsItemLong {
+    grid-template-columns: 24rem 1fr;
+  }
+
+  .paramsItemLabel {
+    font-size: 1.6rem;
+    letter-spacing: -0.032rem;
+  }
+
+  .paramsItemLink {
+    font-size: 1.6rem;
+    letter-spacing: -0.032rem;
+  }
+
+  .paramsItemContent {
+    font-size: 1.6rem;
+    letter-spacing: -0.032rem;
+  }
+}

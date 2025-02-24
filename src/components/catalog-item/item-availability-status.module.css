@@ -1,0 +1,62 @@
+.availableItemList {
+  width: 100%;
+  max-height: 40.5rem;
+  margin-bottom: 4.8rem;
+}
+
+.availableItemList section {
+  padding: 1.2rem 1.6rem;
+}
+
+.itemAvailabilityStatus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.itemSectionHeading {
+  font-size: 2.4rem;
+  color: #21232d;
+  letter-spacing: -0.048rem;
+  font-weight: 700;
+}
+
+.itemAvailabilityStatusHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 64rem) {
+  .itemAvailabilityStatus {
+    max-width: calc(100% - 26.4rem);
+  }
+
+  .itemSectionHeading {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .itemAvailabilityStatus {
+    max-width: calc(100% - 30.4rem);
+  }
+
+  .itemAvailabilityStatusHeader {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .availableItemList {
+    margin-bottom: 6.4rem;
+  }
+
+  .availableItemList section {
+    padding: 1.6rem 2.4rem;
+  }
+}

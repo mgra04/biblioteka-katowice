@@ -1,0 +1,44 @@
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  left: -1rem;
+  background: linear-gradient(164deg, #2f3240 3.68%, #2b2e3e 92.98%);
+  border-radius: 0.8rem;
+  box-shadow: 0px 110px 31px 0px rgba(47, 50, 64, 0),
+    0px 70px 28px 0px rgba(47, 50, 64, 0.01),
+    0px 40px 24px 0px rgba(47, 50, 64, 0.03),
+    0px 18px 18px 0px rgba(47, 50, 64, 0.05),
+    0px 4px 10px 0px rgba(47, 50, 64, 0.06);
+  padding: 1.2rem;
+  z-index: 1000;
+
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.15s ease, transform 0.15s ease, top 0.15s ease;
+}
+
+.dropdownMenuVisible {
+  top: 100%;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dropdownMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 910px) {
+  .dropdownMenu {
+    position: static;
+    width: 100%;
+    top: auto;
+    left: auto;
+    transform: none;
+    opacity: 1;
+    box-shadow: none;
+    padding: 1.2rem 0;
+  }
+}

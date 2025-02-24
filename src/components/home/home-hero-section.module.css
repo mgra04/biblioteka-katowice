@@ -1,0 +1,112 @@
+.heroSection {
+  margin: 0 2.4rem 6.4rem;
+}
+
+.heading {
+  font-size: 3.2rem;
+  letter-spacing: -0.064rem;
+  margin-bottom: 2.4rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.relativeSpan {
+  position: relative;
+}
+
+.loopImageWrapper {
+  position: absolute;
+  top: -0.9rem;
+  left: -1.7rem;
+  width: 12rem;
+  height: 6.2rem;
+}
+
+.loopImage {
+  object-fit: cover;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: -0.036rem;
+  margin-bottom: 2.4rem;
+}
+
+.btnsGroup {
+  flex-direction: column;
+  margin-bottom: 4.8rem;
+}
+
+.btnsGroup a {
+  width: 100%;
+}
+
+@media screen and (min-width: 35rem) {
+  .paragraph {
+    max-width: 47.8rem;
+    margin: 0 auto 2.4rem;
+  }
+
+  .btnsGroup {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btnsGroup a {
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 46.5rem) {
+  .heroSection {
+    margin: 0 2.4rem 9.6rem;
+  }
+
+  .heading {
+    font-size: 4.8rem;
+    letter-spacing: -0.096rem;
+    margin-bottom: 3.2rem;
+    margin-top: 6.4rem;
+    gap: 2.4rem;
+  }
+
+  .loopImageWrapper {
+    top: -1.1rem;
+    left: -2.7rem;
+    width: 18rem;
+    height: 9.3rem;
+  }
+
+  .paragraph {
+    max-width: 63.6rem;
+    font-size: 2.4rem;
+    letter-spacing: -0.048rem;
+  }
+}
+
+@media screen and (min-width: 78rem) {
+  .heroSection {
+    margin: 9.6rem auto 9.6rem;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .heading {
+    margin-bottom: 4rem;
+    margin-top: 0;
+    justify-content: start;
+  }
+
+  .paragraph {
+    max-width: 47rem;
+    text-align: left;
+  }
+
+  .btnsGroup {
+    justify-content: start;
+  }
+}
